@@ -4,11 +4,295 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	
+	<!-- bootstrap-->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>	
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="bower_components/reset.css">
 	<link rel="stylesheet" href="_main.min.css">
 </head>
 <body>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente doloremque quaerat, repudiandae dignissimos saepe sunt libero laboriosam cupiditate consequuntur nemo excepturi, deleniti accusamus aliquid tempore aperiam quis nesciunt dicta distinctio vel asperiores animi, veritatis ad quibusdam. Hic natus qui, recusandae perspiciatis possimus laudantium quia sit delectus, totam atque, minima ab?</p>
+	<header class="s-header">
+		<div class="container">
+			<div class="row">
+				<div class="header__name col-lg-4 col-md-6 col-sm-6 col-xs-9">
+					<p class="name__part"><span class="part_firstLetter">Л</span>иния</p>
+					<p class="name__part"><span class="part_firstLetter">И</span>ндивидуальной</p>
+					<p class="name__part"><span class="part_firstLetter">М</span>ебели</p>
+				</div>
+				<div class="header__contacts col-lg-4 col-lg-offset-4 col-md-6 col-sm-6 col-xs-9">
+					<div class="contacts">
+						<p class="contacts__help">Нужна помощь?</p>
+						<p class="contacts__phone">067-253-23-18</p>
+						<p class="contacts__mail">linefutniture@gmail.com</p>
+						<p class="contacts__working-time">Работаем с 09-00 до 18-00<br /> Понедельние - Пятнициа</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- navigation -->	
+		<nav class="navbar navbar-deffault">
+			<div class="container">
+			<ul class="nav navbar-nav">
+				<li class="menu__element"><a class="menu__link menu__link_active" href="">Гланая</a></li>
+				<li class="menu__element dropdown">
+				<a class="menu__link dropdown-toggle" data-toggle="dropdown" href="#">Мебель
+					<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="">Шкафы</a></li>
+						<li><a href="">Спальни</a></li>
+						<li><a href="">Кухни</a></li>
+						<li><a href="">Ванная</a></li>
+						<li><a href="">Прихожая</a></li>
+					</ul>
+				</li>
+				<li class="menu__element"><a class="menu__link" href="">Товар на скалде</a></li>
+				<li class="menu__element"><a class="menu__link" href="contacts.html">Контакты</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="menu__element active">
+					<form role="form">
+						<div class="form-group">
+						
+							<select class="form-control" id="sel1">
+								<option>Ru</option>
+								<option>En</option>
+								<option>Gr</option>
+							</select>
+						</div>
+					</form>
+				</li>
+
+			</ul>
+			</div>
+		</nav>
+		
+		
+	</header>
+
+	<main>
+
+		<!-- section slider + thumbs -->
+		<section class="s-main">
+			<!-- slider -->
+			<div class="container-fluid">
+			<div class="row">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active slider__indicator"></li>
+						<li data-target="#myCarousel" data-slide-to="1" class="slider__indicator"></li>
+						<li data-target="#myCarousel" data-slide-to="2" class="slider__indicator"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img class="slide__img" src="img/kitchen_1.jpg">
+							<div class="caption">
+								<h2 class="caption__title">Кухни</h2>
+								<p class="caption__description">
+									Кухни на любой вкус !
+								</p>
+								<a href="#" class="caption__link"></a>
+							</div>
+						</div>
+						<div class="item">
+							<img class="slide__img" src="img/kitchen_2.jpg">
+							<div class="caption caption_dark">
+								<h2 class="caption__title">Кровати</h2>
+								<p class="caption__description">
+									Кровати на любой вкус !
+								</p>
+								<a href="#" class="caption__link"></a>
+							</div>
+						</div>
+						<div class="item">
+							<img class="slide__img" src="img/bad-room_1.jpg">
+							<div class="caption">
+								<h2 class="caption__title">Мебель</h2>
+								<p class="caption__description">
+									Мебель на любой вкус !
+								</p>
+								<a href="#" class="caption__link"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /slider END -->
+
+		<!-- thumbs -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-8 col-xs-10">
+						<div class="thumb thumb_shadow">
+							<img class="thumb__img" src="img/kitchen_3.jpg" alt="">
+							<div class="thumb-content thumb-content_dark">
+								<h2 class="thumb__title">Кухни</h2>
+								<p class="thumb__description">Лучши материалы, мастера знающие свое дело</p>
+								<a href="#" class="thumb__link"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<div class="thumb thumb_shadow">
+							<img class="thumb__img" src="img/kitchen_4.jpg" alt="">
+							<div class="thumb-content thumb-content_white">
+								<h2 class="thumb__title thumb__title_dark">Прихожии</h2>
+								<p class="thumb__description thumb__description_dark">Мы воплотим вашу мечту в реальность!</p>
+								<a href="#" class="thumb__link"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-8 col-xs-10">
+						<div class="thumb thumb_shadow">
+							<img class="thumb__img" src="img/kitchen_3.jpg" alt="">
+							<div class="thumb-content thumb-content_white">
+								<h2 class="thumb__title thumb__title_dark">Ванная комната</h2>
+								<p class="thumb__description thumb__description_dark">Красиво и со вкусом!</p>
+								<a href="#" class="thumb__link"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-8 col-xs-10">
+						<div class="thumb thumb_shadow">
+							<img class="thumb__img" src="img/kitchen_3.jpg" alt="">
+							<div class="thumb-content">
+								<h2 class="thumb__title">Спальная комната</h2>
+								<p class="thumb__description">Мы делаем все как Вы захотите!</p>
+								<a href="#" class="thumb__link"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-8 col-xs-10">
+						<div class="thumb thumb_shadow">
+							<img class="thumb__img" src="img/kitchen_3.jpg" alt="">
+							<div class="thumb-content thumb-content_dark">
+								<h2 class="thumb__title">Мебель</h2>
+								<p class="thumb__description">Любой дизайн мы реализуем!</p>
+								<a href="#" class="thumb__link"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /thumbs END-->
+		</section>
+		<section class="s-about">
+			<div class="container">
+				<div class="row">
+					<h2 class="about__title"><span class="span__bold">Добро пожаловать</span> на наш сайт!</h2>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis sapiente, nemo dignissimos adipisci omnis eligendi quisquam deserunt quaerat neque repudiandae eum aliquam vitae tenetur cumque voluptatem reiciendis. Provident vel porro nemo iure maiores, libero perferendis in quae cumque ullam molestiae optio eius expedita, et, ea nulla earum dolores modi.</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem optio maiores ipsum ea culpa totam praesentium nulla deleniti molestias, illum adipisci nihil, repudiandae facilis expedita, nostrum odio obcaecati quod error quasi earum ut fugit vel. Cumque, placeat quisquam mollitia at impedit deleniti. Repudiandae perspiciatis, odio sint deserunt ut sed, quaerat.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-advantages">
+			<div class="container">
+				<div class="row">
+					<h2 class="advantages__title">Наши <span class="span__bold">преймущетсва</span></h2>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<p class="advantages__description">Lorem ipsum dolor sit amet.
+								<a href="#" class="advantages__link"></a></p>
+								<p class="advantages__description">Lorem ipsum dolor sit amet.
+								<a href="#" class="advantages__link"></a></p>
+								<p class="advantages__description">Lorem ipsum dolor sit amet.
+								<a href="#" class="advantages__link"></a></p>
+								<p class="advantages__description">Lorem ipsum dolor sit amet.
+								<a href="#" class="advantages__link"></a></p>
+								<p class="advantages__description">Lorem ipsum dolor sit amet.
+								<a href="#" class="advantages__link"></a></p>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<img src="img/bad-room_3.jpg" class="img-responsive advantages__img" alt="">
+							</div>
+						</div>
+					</div>
+						<!-- selection -->
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<img src="img/kitchen_7.jpg" alt="" class="img-responsive">
+									<div class="selection-block">
+										<h2 class="selection__title">Большой выбор качественной мебели</h2>
+										<p class="selection__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, possimus laudantium incidunt debitis placeat labore aperiam. Ducimus recusandae beatae maiores.</p>
+										<button class="selection__button">Посмотреть</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- brands working -->
+						<div class="container">
+							<div class="row">
+								<h2 class="brand__title"><span class="span__bold">Компании</span> с кем мы сотрудничаем</h2>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_1.jpg" alt="" class="img-responsive brand__img"></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_2.jpg" alt="" class="img-responsive brand__img"></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_3.jpg" alt="" class="img-responsive brand__img"></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_4.jpg" alt="" class="img-responsive brand__img"></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_5.jpeg" alt="" class="img-responsive brand__img"></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_6.jpg" alt="" class="img-responsive brand__img"></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_7.jpg" alt="" class="img-responsive brand__img"></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"><img src="img/corp_icon_8.jpeg" alt="" class="img-responsive brand__img"></div>
+							</div>
+						</div>
+				
+		</section>
+		<section class="s-map">
+			<div class="container-fluid">
+				<div class="row">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96762.77947303439!2d30.60881332284699!3d50.40880266573912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1447892901788" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="s-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+					<address class="footer__address">
+						<span class="glyphicon glyphicon-map-marker"></span>
+						Киев, ул. Сечевых Стрельцов 5, офис 25
+					</address>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+					<p class="footer__phone">
+						<span class="glyphicon glyphicon-phone"></span>067-253-23-18
+					</p>
+					<p class="footer__phone">
+						<span class="glyphicon glyphicon-phone"></span>096-545-13-88
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+					<p href="" class="footer__mail">
+						Есть вопросы? Напишите нам:
+						<a href="#" class="mail__link"></a>
+					</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+					<div class="footer__social">
+						<a href="" class="social__link social__link_facebook"></a>
+						<a href="" class="social__link social__link_skype"></a>
+						<a href="" class="social__link social__link_twitter"></a>
+					</div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p class="footer__corp">Fooring Retailer <span class="glyphicon glyphicon-copyright-mark"></span> 2015 Privacy Policy</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

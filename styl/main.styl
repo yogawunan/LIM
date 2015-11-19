@@ -1,13 +1,310 @@
- @font-face
-   font-family Arsenal
-   font-style normal
-   src url(fonts/arsenal/Arsenal-Regular.otf)
- @font-face
-   font-family Arsenal_Bold
-   font-style bold
-   src url(fonts/arsenal/Arsenal-Bold.otf)
-  
-  p
-  	font-family Arsenal_Bold
-  	
+@import "fonts.styl"
+@import "settings.styl"
+
+
+.row
+	margin-bottom 20px
+html
+	-webkit-font-smoothing: antialiased
+
+body
+	font-size 1em
+	margin 0
+	padding 0
+	box-sizing border-box
+
+/*		header > logo 	*/
+.header__name,
+.header__contacts
+	padding 1em
+.header__name
+	background mainColor
 	
+.name__part
+	font mainTitleFont
+	text-align left
+	color #fff
+	font-size 3em
+	line-height 1
+	font-variant small-caps
+	letter-spacing -2px
+	&:first-letter
+		font-weight bold
+		
+		
+/*		header > contacts 		*/
+.contacts__help
+	font mainTitleFont
+	color mainColor	
+	margin-bottom .3em
+.contacts__phone,
+.contacts__mail,
+
+	font mediumTitleFont
+	font-weight bold
+	padding 1px 0
+	
+	&:before
+		content ''
+		display inline-block
+		width 40px
+		height 40px
+		vertical-align middle
+		margin-right 1em
+.contacts__phone:before
+
+	background url(img/icons/phone_1.png) no-repeat
+	background-size contain
+	
+.contacts__mail:before
+	background url(img/icons/mail_1.png) no-repeat
+	background-size contain	
+	
+.contacts__working-time
+	font contentFont
+	font-style italic
+	margin-top 1em
+	
+/*		navigation 		*/
+
+.navbar
+	border 1px solid #F2F2F2
+	
+	
+.nav
+	margin-right -15px
+	margin-left -15px
+.menu__element
+	padding 5px
+	border-left 1px solid #F2F2F2
+	border-right 1px solid #F2F2F2
+	margin-right -1px
+	
+.menu__link
+	color textDarkColor
+	font mediumTitleFont
+	text-transform uppercase
+	font-weight normal
+	transition background .5s, color .5s
+.menu__link:hover
+	background textDarkColor !important
+	color #fff
+.menu__link_active
+	background textDarkColor
+	color #fff
+	
+/*		slider > img 		*/
+
+.slide__img
+	width 100%
+	height auto
+	max-height 500px
+.carousel-indicators
+	.slider__indicator
+		width 20px
+		height 20px
+		
+	.active
+		background mainColor
+	
+/*		slider > caption 		*/
+.caption
+	position absolute
+	top: 20%
+	left 50%
+	margin-left -200px
+	width 400px
+	vertical-align middle
+	background opacityMainColor
+	padding 2em
+	text-align center
+.caption_dark,
+.thumb-content_dark
+	background opacityDarkColor
+.caption__title,
+.thumb__title,
+.selection__title
+	font mainTitleFont
+	text-transform uppercase
+	font-weight bold
+	color #fff
+	margin-bottom 1em
+	
+.caption__description,
+.thumb__description,
+.selection__description
+	font mediumTitleFont
+	color #fff
+.caption__link,
+.thumb__link,
+.advantages__link
+	position absolute
+	right 30px
+	bottom 25px
+	width 40px
+	height 40px
+	background url(img/icons/right_1.png) no-repeat
+	background-size contain
+	
+
+/*		main  */
+.s-main
+	padding-top 20px
+	margin-top -20px
+	background #F2F2F2
+/* main > thumb blocks */
+.thumb
+	position relative
+	transition all .5s
+.thumb__img
+	max-width 100%
+	height auto
+	height 370px
+	
+.thumb-content
+	position absolute
+	width 100%
+	bottom 0
+	padding .5em
+	background opacityMainColor
+	min-height 100px
+	
+.thumb-content_white
+	background opacityWhiteColor
+	
+.thumb-content_dark
+	background opacityDarkColor
+	
+.thumb__title
+	margin 0
+	margin-bottom .2em
+	
+.thumb__title_dark,
+.thumb__description_dark
+	color textDarkColor
+
+.thumb__description
+	font contentFont
+	width 75%
+
+.thumb_shadow
+	&:hover
+		box-shadow 5px 5px 10px textDarkColor
+
+/*		about company*/
+.s-about,
+.s-advantages
+	padding 2em 0
+	
+.about__title,
+.advantages__title,
+.brand__title
+	color mainColor
+	font mainTitleFont
+	text-transform uppercase
+	text-align center
+	margin-bottom 1em
+.span__bold
+	font-weight bold
+.about__description
+	font contentFont
+	color textDarkColor
+	line-height 1.5
+/*		advantages company*/
+.s-advantages
+	background #F2F2F2
+.advantages__title,
+.brand__title
+	text-align left
+	margin-left 15px
+.advantages__description
+	position relative
+	padding 1.5em 1em
+	background mainColor
+	color #fff
+	margin-bottom .5em
+.advantages__link
+	height 100%
+	top 0
+	bottom 0
+	background-position 50% 50%
+.advantages__img
+	padding .2em 0
+	
+/*		selection */
+.selection-block
+	position absolute
+	top 25%
+	width 60%
+	left 20%
+	text-align center
+	background opacityMainColor
+	padding 2em
+.selection__title
+	width 50%
+	margin auto
+.selection__button
+	btn(#fff, mainColor, textDarkColor, #fff)
+	margin-top 1em
+/*		brand*/
+.brand__title
+	margin-top 1em
+	margin-bottom 1em
+.brand__img
+	max-height 200px
+
+/*		s-map */
+.s-map
+	padding-top 20px
+	background textDarkColor
+	.row
+		margin-bottom 0
+	iframe
+		display block
+	
+/*		footer*/
+.s-footer
+	padding 2em 0
+	border-top 2px solid #f2f2f2
+
+/*		footer - social*/
+
+
+.social__link
+	width 40px
+	height 40px
+	display inline-block
+	margin-left 1em
+
+.social__link_facebook
+	background url(img/icons/facebook_1.png) no-repeat 50% 50%
+	background-size contain
+.social__link_twitter
+	background url(img/icons/twitter_1.png) no-repeat 50% 50%
+	background-size contain
+.social__link_skype
+	background url(img/icons/skype_1.png) no-repeat 50% 50%
+	background-size contain
+
+/*		footer phone && address*/
+.footer__phone,
+.footer__address,
+.footer__mail,
+.footer__social
+	font mediumTitleFont
+	text-align center
+	color textDarkColor
+.mail__link
+	display inline-block
+	margin auto
+	width 40px
+	height 40px
+	background url(img/icons/mail_1.png) no-repeat 50% 50%
+	background-size contain
+	
+.footer__corp
+	text-align center
+	font contentFont
+		
+/*		CONTACTS.html*/
+@import "contStyle.styl"
