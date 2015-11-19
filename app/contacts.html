@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<!-- bootstrap-->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>	
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="bower_components/reset.css">
+	<link rel="stylesheet" href="_main.min.css">
+</head>
+<body>
+	<header class="s-header">
+		<div class="container">
+			<div class="row">
+				<div class="header__name col-lg-4 col-md-6 col-sm-6 col-xs-9">
+					<p class="name__part"><span class="part_firstLetter">Л</span>иния</p>
+					<p class="name__part"><span class="part_firstLetter">И</span>ндивидуальной</p>
+					<p class="name__part"><span class="part_firstLetter">М</span>ебели</p>
+				</div>
+				<div class="header__contacts col-lg-4 col-lg-offset-4 col-md-6 col-sm-6 col-xs-9">
+					<div class="contacts">
+						<p class="contacts__help">Нужна помощь?</p>
+						<p class="contacts__phone">067-253-23-18</p>
+						<p class="contacts__mail">linefutniture@gmail.com</p>
+						<p class="contacts__working-time">Работаем с 09-00 до 18-00<br /> Понедельние - Пятнициа</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- navigation -->	
+		<nav class="navbar navbar-deffault">
+			<div class="container">
+			<ul class="nav navbar-nav">
+				<li class="menu__element"><a class="menu__link" href="">Гланая</a></li>
+				<li class="menu__element dropdown">
+				<a class="menu__link dropdown-toggle" data-toggle="dropdown" href="#">Мебель
+					<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="">Шкафы</a></li>
+						<li><a href="">Спальни</a></li>
+						<li><a href="">Кухни</a></li>
+						<li><a href="">Ванная</a></li>
+						<li><a href="">Прихожая</a></li>
+					</ul>
+				</li>
+				<li class="menu__element"><a class="menu__link" href="">Товар на скалде</a></li>
+				<li class="menu__element"><a class="menu__link menu__link_active" href="/contacts.html">Контакты</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li class="menu__element active">
+					<form role="form">
+						<div class="form-group">
+						
+							<select class="form-control" id="sel1">
+								<option>Ru</option>
+								<option>En</option>
+								<option>Gr</option>
+							</select>
+						</div>
+					</form>
+				</li>
+
+			</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="s-main">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96762.77947303439!2d30.60881332284699!3d50.40880266573912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1447892901788" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<div class="footer__social">
+									<a href="" class="social__link social__link_facebook"></a>
+									<a href="" class="social__link social__link_skype"></a>
+									<a href="" class="social__link social__link_twitter"></a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<p href="" class="footer__mail">
+								Есть вопросы? Напишите нам:
+								<a href="#" class="mail__link"></a>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<address class="footer__address">
+								<span class="glyphicon glyphicon-map-marker"></span>
+								Киев, ул. Сечевых Стрельцов 5, офис 25
+							</address>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<p class="footer__phone">
+								<span class="glyphicon glyphicon-phone"></span>067-253-23-18
+							</p>
+							<p class="footer__phone">
+								<span class="glyphicon glyphicon-phone"></span>096-545-13-88
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="contacts-form">
+			<div class="container">
+				<h2 class="fomt__title">Связаться с нами</h2>
+				<form class="form-horizontal">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<input class="form-control form__input" type="text" placeholder="Имя" class="form-control" id="inputWraning1">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<input class="form-control form__input" type="text" placeholder="Телефон" class="form-control">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<input class="form-control form__input" type="mail" placeholder="e-mail" class="form-control">
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<textarea class="form__textarea form-control" rows="5"></textarea>
+					</div>
+					<button class="form__button">Отправить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="s-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p class="footer__corp">Fooring Retailer <span class="glyphicon glyphicon-copyright-mark"></span> 2015 Privacy Policy</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
